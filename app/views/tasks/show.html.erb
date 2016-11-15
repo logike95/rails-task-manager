@@ -1,0 +1,8 @@
+
+<h1> Tâche selectionnée : <%= @task.name %>  </h1>
+<p> <%= @task.description %> </p>
+<p> <%= @task.done %> </p>
+
+<%= link_to "Update a task", edit_task_path %>
+<%= link_to "Destroy a task", task_path(@task), method: :delete %>
+<%= link_to "Back to all task", tasks_path%>
